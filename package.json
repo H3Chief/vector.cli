@@ -6,9 +6,19 @@
   "scripts": {
     "test": "mocha"
   },
+  "bin":{
+    "vcli":"./bin/vcli"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/H3Chief/vector.cli.git"
+  },
+  "ignore":[
+    "/bin"
+  ],
+  "directories":{
+    "src": "./lib",
+    "doc": "./docs"
   },
   "keywords": [
     "node-cli",
