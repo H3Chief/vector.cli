@@ -32,9 +32,10 @@ program.appendFromPath('/path/to/command/dir');
 //someCommand.js
 var {command} = reequire("vcli");
 
-command.on(function(){
-    // do something whenever command is called
-});
+command.subscribe(
+  results => myAction(),  // do something whenever command is called
+  err => handleError()
+);
 module.exports = command;
 
 ```
