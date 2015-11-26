@@ -6,17 +6,17 @@
   "scripts": {
     "test": "mocha"
   },
-  "bin":{
-    "vcli":"./bin/vcli"
+  "bin": {
+    "vcli": "./bin/vcli"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/H3Chief/vector.cli.git"
   },
-  "ignore":[
+  "ignore": [
     "/bin"
   ],
-  "directories":{
+  "directories": {
     "src": "./lib",
     "doc": "./docs"
   },
@@ -34,5 +34,9 @@
   "dependencies": {
     "minimist": "^1.2.0",
     "rx": "^4.0.7"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
   }
 }
