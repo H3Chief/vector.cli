@@ -29,6 +29,14 @@ program.appendFromPath('/path/to/command/dir');
 
 });
 
+//someCommand.js
+var {command} = reequire("vcli");
+
+command.on(function(){
+    // do something whenever command is called
+});
+module.exports = command;
+
 ```
 
 [//]: # Links
