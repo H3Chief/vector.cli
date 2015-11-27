@@ -1,9 +1,15 @@
 /*global expect, assert*/
-var command = require('../../lib/command');
+var Command = require('../../lib/command');
+var assert = require("chai").assert;
 
-describe('command prototype tests',function(){
+var command = new Command();
+
+
+describe('command prototype',function(){
 
   it('should have the following functions: ',function(){
-    assert.isFunction(command().attach," - attach()");
+    expect(command.attach).to.be.a('function');
+    expect(command.append).to.be.a('function');
+    expect(command.appendFromPath).to.be.a('function');
   });
 });
