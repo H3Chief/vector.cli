@@ -16,7 +16,9 @@
     "url": "git+https://github.com/H3Chief/vector.cli.git"
   },
   "ignore": [
-    "/bin"
+    "/bin",
+    "/examples",
+    "docs"
   ],
   "directories": {
     "src": "./lib",
