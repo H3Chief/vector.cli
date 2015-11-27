@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./lib ./test",
-    "pretest":"eslint ./test",
+    "pretest": "eslint ./test",
     "test": "mocha"
   },
   "bin": {
@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/H3Chief/vector.cli#readme",
   "dependencies": {
+    "babel": "^6.1.18",
     "minimist": "^1.2.0",
     "rx": "^4.0.7"
   },

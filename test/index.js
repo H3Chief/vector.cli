@@ -1,1 +1,1 @@
-var vcli = require("vector.cli");
+var vcli = require("../index.js");
