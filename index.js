@@ -1,6 +1,9 @@
 var Rx = require("rx");
 var program = Rx.Observable.from(process.argv.slice(2));
-var command = require("./lib/command");
+var Command = require("./lib/command");
+
+// return a constructed command as the root command of a program
+var rootCommand = new Command();
 
 /**
 *@Description feeds cli arguments into the parser
@@ -14,5 +17,4 @@ var program = function(args){
   return Rx.Observable.from(args);
 };
 
-module.exports.program = program;
-module.exports.command = command;
+module.exports = program;
